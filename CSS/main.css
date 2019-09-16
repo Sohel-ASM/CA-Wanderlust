@@ -123,3 +123,30 @@ footer {
     text-align: left;
     color: #4a4a4a;
 }
+
+#venues {
+    display: flex;
+    justify-content: space-around;
+    min-height: 250px;
+}
+
+#weather {
+    display: flex;
+    justify-content: space-around;
+    min-height: 350px;
+}
+
+#city {
+    width: 286px;
+    height: 46px;
+    border-radius: 4px;
+    border: solid 2.5px #ffffff;
+    background-color: inherit;
+    opacity: 0.73;
+    font-family: Source Sans Pro;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #ffffff;
+}

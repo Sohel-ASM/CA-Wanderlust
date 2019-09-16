@@ -99,3 +99,27 @@ footer {
     text-align: center;
     padding-top: 5px;
 }
+
+#destination {
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.9px;
+    text-align: left;
+    color: #27b7c1;
+}
+
+.sectiontitle {
+    height: 70px;
+    width: 300px;
+    align-items: center;
+}
+
+.sectiontitle h2 {
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 3.4px;
+    text-align: left;
+    color: #4a4a4a;
+}

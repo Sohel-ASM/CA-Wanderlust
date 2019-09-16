@@ -70,3 +70,15 @@ const renderForecast = (days) => {
         $day.append(weatherContent);
     });
 };
+
+const executeSearch = () => {
+    $venueDivs.forEach(venue => venue.empty());
+    $weatherDivs.forEach(day => day.empty());
+    $destination.empty();
+    $container.css("visibility", "visible");
+    getVenues().then(venues => renderVenues(venues));
+    getForecast().then(forecast => renderForecast(forecast));
+    return false;
+}
+
+$submit.click(executeSearch)

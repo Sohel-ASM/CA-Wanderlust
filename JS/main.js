@@ -60,4 +60,13 @@ const renderVenues = (venues) => {
         $venue.append(venueContent);
     });
     $destination.append(`<h2>${venues[0].location.city}</h2>`);
-}
+};
+
+const renderForecast = (days) => {
+    $weatherDivs.forEach(($day, index) => {
+
+        const currentDay = days[index];
+        let weatherContent = createWeatherHTML(currentDay);
+        $day.append(weatherContent);
+    });
+};

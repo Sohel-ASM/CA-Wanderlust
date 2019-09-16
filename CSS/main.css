@@ -54,3 +54,24 @@ footer {
     position: relative;
     padding: 5px;
 }
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    visibility: hidden;
+}
+
+.weather h2 {
+    font-family: Montserrat;
+    font-size: 18px;
+    line-height: 0.78;
+    text-align: left;
+    color: #4a4a4a;
+}
+
+.weather {
+    width: 200px;
+    height: 260px;
+    padding: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}

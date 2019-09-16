@@ -32,4 +32,19 @@ const getVenues = async () => {
     } catch (error) {
         console.log(error);
     }
-}
+};
+
+const getForecast = async () => {
+    const urlToFetch = `${forecastUrl}${apiKey}&q=${input.val()}&days=4&hour=11`;
+    try {
+        const response = await fetch(urlToFetch);
+        if (response.ok) {
+            const jsonResponse = await response.json();
+            const days = jsonResponse.forecast.forecastday;
+            return days;
+        }
+        throw new Error('Request failed!');
+    } catch (error) {
+        console.log(error);
+    }
+};
